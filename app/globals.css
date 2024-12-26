@@ -2,20 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+
+Header h1 {
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+   
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.guru h1 {
+
+    font-weight: bold;
+    text-align: center;
+   
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.status {
+
+    font-weight: bold;
+    font-size: 1.5rem;
+   
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.feel  {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.feeltwo{
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.goodbutton {
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(5, 2, 2, 1);
+    font-family: 'Arial', sans-serif;
+    border-radius: 20px;
+    background-size: 200% 200%;
+}
+
+.goodbutton:hover {
+    background-position: right center;
+    box-shadow: 0 6px 8px rgba(1, 0, 0, 0.15);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
 }
